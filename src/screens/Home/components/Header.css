@@ -34,3 +34,7 @@
 .headerMiddleForm > input:hover {
     border: 1px solid black;
 }
+
+.headerMiddleForm > input:focus {
+    outline: 0;
+}
