@@ -1,0 +1,36 @@
+.header {
+    border-bottom: 1px solid black;
+    height: 60px;
+    flex-direction: row;
+    display: flex;
+}
+
+.headerLeft > h1 {
+    margin-top: 10px;
+    margin-left: 3px;
+}
+
+.headerLeft > h1:hover {
+    color: gray;
+    cursor: pointer;
+}
+
+.headerMiddleForm {
+    flex-direction: row;
+    display: flex;
+}
+
+.headerMiddleForm > input {
+    width: 900px;
+    margin-left: 20px;
+    margin-top: 10px;
+    height: 38px;
+    border-radius: 20px;
+    border: none;
+    background: whitesmoke;
+    font-size: 17px;
+}
+
+.headerMiddleForm > input:hover {
+    border: 1px solid black;
+}
