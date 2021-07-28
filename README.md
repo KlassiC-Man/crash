@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+<!-- # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -68,3 +68,18 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+ -->
+ 
+ # crash
+ 
+ ## Introduction
+ ------------------------------
+ ### crash is a social media made with <3 by @kkanekii and @KlassiC-man
+ ### crash <3's open source hence we are open to contributions
+ ### register for crash beta over here:
+ 
+ ## Contribution
+ ------------------------------
+ ### read :
+ 
+ # Thank You

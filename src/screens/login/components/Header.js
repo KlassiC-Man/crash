@@ -1,11 +1,11 @@
 import React from 'react'
 
-function Search() {
+function Header() {
     return (
         <div>
-            
+            yo
         </div>
     )
 }
 
-export default Search
+export default Header
