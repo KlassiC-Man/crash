@@ -6,9 +6,16 @@ import { IconButton } from '@material-ui/core';
 import ArrowDropDownCircleOutlinedIcon from '@material-ui/icons/ArrowDropDownCircleOutlined';
 import './Header.css';
 import { Avatar } from '@material-ui/core';
+import firebase from 'firebase';
+import {auth, db} from '../../../firebase';
+import { Redirect } from 'react-router';
+import { Link } from 'react-router-dom';
 
 function Header() {
     const [search, setSearch] = useState('');
+
+    // the current user
+    const user = firebase.auth().currentUser;
 
     return (
         <div className='header'>
@@ -23,11 +30,22 @@ function Header() {
                 <NotificationsNoneOutlinedIcon />
                 <AddOutlinedIcon />
             </div>
-            <div className='headerProfile'>
-                <Avatar src={'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.sMRzxqyo6BQD4CE5VPaEMgHaE7%26pid%3DApi&f=1'} />
-                <h4>Darth Vader</h4>
-                <ArrowDropDownCircleOutlinedIcon />
-            </div>
+            {
+                user !== null ? (
+                    <div className='headerProfile'>
+                        <Avatar src={user.photoURL} />
+                        <h4>Darth Vader</h4>
+                        <ArrowDropDownCircleOutlinedIcon />
+                    </div>
+                ) : (
+                    <div className='profileDoesntExist'>
+                        <Link to='/login'>
+                            <button className='login'>Login</button>
+                        </Link>
+                        <button className='signUp'>Sign Up</button>
+                    </div>
+                )
+            }
         </div>
     )
 }
