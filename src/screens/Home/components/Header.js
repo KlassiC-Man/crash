@@ -20,7 +20,7 @@ function Header() {
                     <input type='text' placeholder='Search crash' value={search} onChange={e => setSearch(e.target.value)}  />
                 </form>
             </div>
-            <div className='headerRight'>
+            <div className='headerRight'> 
                 <ChatOutlinedIcon style={{marginLeft: 10}} />        
                 <NotificationsNoneOutlinedIcon />
                 <AddOutlinedIcon />
