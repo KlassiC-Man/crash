@@ -7,11 +7,11 @@ function Header() {
     return (
         <div className='header'>
             <div className='headerLeft'>
-                <h1>Crash</h1>
+                <h1>crash</h1>
             </div>
             <div className='headerMiddle'>
                 <form className='headerMiddleForm'>
-                    <input type='text' placeholder='Search Crash' value={search} onChange={e => setSearch(e.target.value)}  />
+                    <input type='text' placeholder='Search crash' value={search} onChange={e => setSearch(e.target.value)}  />
                 </form>
             </div>
         </div>
