@@ -18,7 +18,7 @@ function Header() {
             <div className='headerMiddle'>
                 <input type='text' placeholder='Search crash' value={search} onChange={e => setSearch(e.target.value)}  />    
             </div>
-            <div className='headerRight'>
+            <div className='headerRight'> 
                 <ChatOutlinedIcon style={{marginLeft: 10}} />        
                 <NotificationsNoneOutlinedIcon />
                 <AddOutlinedIcon />
