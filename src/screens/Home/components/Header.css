@@ -3,15 +3,17 @@
     height: 60px;
     flex-direction: row;
     display: flex;
+    background: #1A1A1B;
 }
 
 .headerLeft > h1 {
     margin-top: 10px;
     margin-left: 3px;
+    color: tomato;
 }
 
 .headerLeft > h1:hover {
-    color: gray;
+    color: red;
     cursor: pointer;
 }
 
@@ -27,14 +29,56 @@
     height: 38px;
     border-radius: 20px;
     border: none;
-    background: whitesmoke;
+    background: #343536;
+    color: white; 
     font-size: 17px;
+    transition: width 0.2s;
 }
 
 .headerMiddleForm > input:hover {
-    border: 1px solid black;
+    border: 1px solid white;
+    background: #1A1A1B;
+    width: 1100px;
 }
 
 .headerMiddleForm > input:focus {
     outline: 0;
+    width: 1100px;
+}
+
+.headerRight > .MuiSvgIcon-root {
+    color: white;
+    height: 30px;
+    width: 30px;
+    margin: 5px;
+    margin-right: 10px;
+    margin-top: 15px;
+}
+
+.headerRight > .MuiSvgIcon-root:hover {
+    background: #343536;
+    border-radius: 10px;
+}
+
+.headerProfile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 50px;
+}
+
+.headerProfile:hover {
+    background: #343536;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.headerProfile > h4 {
+    color: whitesmoke;
+    margin-left: 10px;
+}
+
+.headerProfile > .MuiSvgIcon-root {
+    color: #fff;
+    margin-left: 25px;
 }
