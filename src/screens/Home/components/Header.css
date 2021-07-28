@@ -17,13 +17,15 @@
     cursor: pointer;
 }
 
-.headerMiddleForm {
+.headerMiddle {
     flex-direction: row;
     display: flex;
+    flex: 0.80;
+    transition: flex 0.2s;
 }
 
-.headerMiddleForm > input {
-    width: 900px;
+.headerMiddle > input {
+    flex: 0.80;
     margin-left: 20px;
     margin-top: 10px;
     height: 38px;
@@ -32,18 +34,27 @@
     background: #343536;
     color: white; 
     font-size: 17px;
-    transition: width 0.2s;
+    transition: flex 0.2s;
 }
 
-.headerMiddleForm > input:hover {
+.headerMiddle:hover {
+    flex: 1;
+}
+
+.headerMiddle > input:hover {
     border: 1px solid white;
     background: #1A1A1B;
-    width: 1100px;
+    flex: 1;
 }
 
-.headerMiddleForm > input:focus {
+.headerMiddle > input:focus {
     outline: 0;
     width: 1100px;
+    flex: 1;
+}
+
+.headerMiddle:focus {
+    flex: 1;
 }
 
 .headerRight > .MuiSvgIcon-root {
