@@ -13,7 +13,7 @@ export function requireAuth(Component) {
       setCheck(true);
     }, []);
 
-    const RedirectToLogin = <Redirect to="/" />;
+    const RedirectToLogin = <Redirect to="/login" />;
 
     return check && (currentUser !== null ? <Component {...props} /> : RedirectToLogin);
   };
