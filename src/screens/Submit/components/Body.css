@@ -1,0 +1,43 @@
+.submitBody {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    height: 50%;
+    background: #1A1A1B;
+    margin-top: 10%;
+    margin-left: 25%;
+    border-radius: 10px;
+}
+
+.submitBodyTop {
+    display: flex;
+    flex-direction: row;
+}
+
+.submitBodyTopAvatar {
+    margin: 5px;
+    margin-top: 7px;
+}
+
+.submitBodyTop > h4 {
+    margin-left: 3px;
+}
+
+.submitBodyMiddle {
+    align-self: center;
+    width: 90%;
+}
+
+.submitBodyMiddle > input {
+    border: 1px solid gray;
+    width: 100%;
+    background: transparent;
+    color: #fff;
+    border-radius: 5px;
+    height: 30px;
+}
+
+.submitBodyMiddle > input:focus {
+    outline: 0
+}
