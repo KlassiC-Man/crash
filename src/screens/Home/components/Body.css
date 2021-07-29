@@ -39,6 +39,7 @@
     height: 30px;
     width: 30px;
     margin-right: 5px;
+    color: white
 }
 
 .bodyPostSender > .MuiSvgIcon-root:hover {
