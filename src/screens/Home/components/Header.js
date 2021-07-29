@@ -10,6 +10,7 @@ import firebase from 'firebase';
 import {auth, db} from '../../../firebase';
 import { Redirect } from 'react-router';
 import { Link } from 'react-router-dom';
+import Login from '../../login/Login';
 
 function Header() {
     const [search, setSearch] = useState('');
@@ -34,7 +35,7 @@ function Header() {
                 user !== null ? (
                     <div className='headerProfile'>
                         <Avatar src={user.photoURL} />
-                        <h4>Darth Vader</h4>
+                        <h4>Darth Vader</h4> // use variable from login parth, i imported it from login.js
                         <ArrowDropDownCircleOutlinedIcon />
                     </div>
                 ) : (
